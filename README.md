@@ -18,19 +18,10 @@ samples, guidance on mobile development, and a full API reference.
 ### Add Hive Library
 ```yml
 dependencies:
-  flutter:
-    sdk: flutter
-
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
   hive:
   hive_flutter:
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   hive_generator: 
   build_runner:
 ```
