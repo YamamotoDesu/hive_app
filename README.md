@@ -44,7 +44,7 @@ Run build task flutter packages pub run build_runner build
 
 <img width="722" alt="スクリーンショット_2023_05_13_15_15" src="https://github.com/YamamotoDesu/hive_app/assets/47273077/ce2238f0-86cc-4018-a061-bdfeb9670e4e">
 
-## Initialize
+## [Initialize](https://docs.hivedb.dev/#/?id=initialize)
 ```dart
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -52,3 +52,5 @@ import 'package:hive_flutter/hive_flutter.dart';
 void main() async {
   await Hive.initFlutter();
 ```
+
+## [Register Adapter](https://docs.hivedb.dev/#/custom-objects/type_adapters?id=register-adapter)
