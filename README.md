@@ -54,3 +54,8 @@ void main() async {
 ```
 
 ## [Register Adapter](https://docs.hivedb.dev/#/custom-objects/type_adapters?id=register-adapter)
+```dart
+void main() async {
+  await Hive.initFlutter();
+  Hive.registerAdapter(PersonAdapter());
+ ```
