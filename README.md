@@ -1,19 +1,4 @@
-# hive_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# [hive_app](https://www.youtube.com/watch?v=xN_OTO5EYKY&t=104s)
 
 ### Add Hive Library
 ```yml
@@ -29,3 +14,28 @@ dev_dependencies:
 
 ### Generate adapter
 https://github.com/hivedb/docs/blob/master/custom-objects/generate_adapter.md
+
+person.dart
+```dart
+import 'package:hive/hive.dart';
+
+part 'person.g.dart';
+
+@HiveType(typeId: 1)
+class Person {
+  Person({
+    required this.name,
+    required this.age,
+  });
+
+  @HiveField(0)
+  String name;
+
+  @HiveField(1)
+  int age;
+}
+```
+
+```
+Run build task flutter packages pub run build_runner build
+```
