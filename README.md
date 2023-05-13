@@ -54,8 +54,17 @@ void main() async {
 ```
 
 ## [Register Adapter](https://docs.hivedb.dev/#/custom-objects/type_adapters?id=register-adapter)
+lib/boxes.dart
+```dart
+import 'package:hive/hive.dart';
+
+late Box boxPersons;
+```
+
 ```dart
 void main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(PersonAdapter());
- ```
+  boxPersons = await Hive.openBox<Person>('peopleBox');
+```
+
